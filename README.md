@@ -6,15 +6,15 @@
 
 KVM/XEN机器执行(CentOS7):
 
-`yum install -y gcc wget curl && wget https://raw.githubusercontent.com/HXHGTS/xray-websocket-tls/main/v2ray.c -O v2ray.c && chmod +x v2ray.c && gcc -o v2ray v2ray.c && ./v2ray`
+`yum install -y gcc wget curl && wget https://raw.githubusercontent.com/GomoXU/xray-websocket-tls/main/v2ray.c -O v2ray.c && chmod +x v2ray.c && gcc -o v2ray v2ray.c && ./v2ray`
 
 KVM/XEN机器执行(CentOS8):
 
-`yum install -y gcc wget curl && wget https://raw.githubusercontent.com/HXHGTS/xray-websocket-tls/main/v2ray_centos8.c -O v2ray.c && chmod +x v2ray.c && gcc -o v2ray v2ray.c && ./v2ray`
+`yum install -y gcc wget curl && wget https://raw.githubusercontent.com/GomoXU/xray-websocket-tls/main/v2ray_centos8.c -O v2ray.c && chmod +x v2ray.c && gcc -o v2ray v2ray.c && ./v2ray`
 
 KVM/XEN机器执行(Debian10):
 
-`apt install -y build-essential wget curl && wget https://raw.githubusercontent.com/HXHGTS/xray-websocket-tls/main/v2ray_debian10.c -O v2ray.c && chmod +x v2ray.c && gcc -o v2ray v2ray.c && ./v2ray`
+`apt install -y build-essential wget curl && wget https://raw.githubusercontent.com/GomoXU/xray-websocket-tls/main/v2ray_debian10.c -O v2ray.c && chmod +x v2ray.c && gcc -o v2ray v2ray.c && ./v2ray`
 
 第一次点击安装后会自动升级系统内核并触发重启，重启后输入
 
@@ -32,6 +32,4 @@ CDN套用方法请参看[CDN套用方法](/cdn.md)
 
 3.脚本仅支持CentOS7系统
 
-4.脚本执行需要root权限登录系统，AWS等特殊机型打开root权限方法[看这里](https://hxhgts.github.io/AWSECSRoot/)
-
-5.请在服务器后台防火墙放行tcp2053(https)端口
+5.请在服务器后台防火墙放行tcp4321(https)端口
